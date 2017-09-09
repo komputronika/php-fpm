@@ -3,19 +3,19 @@
 Docker container to install and run PHP-FPM.
 
 
-###What is PHP-FPM ?###
+### What is PHP-FPM ? ###
 
 PHP-FPM (FastCGI Process Manager) is an alternative FastCGI implementation for PHP.
 
-###Getting image###
+### Getting image ###
     
     docker pull komputronika/php-fpm
 
-###Basic usage###
+### Basic usage ###
     
     docker run -v /path/to/your/app:/var/www/html -d komputronika/php-fpm
 
-###Running your PHP script###
+### Running your PHP script ###
 
 Run the PHP-FPM image, mounting a directory from your host.
 
@@ -32,7 +32,8 @@ or using Docker Compose:
         volumes:
           - /path/to/your/app:/var/www/html
 
-###Installed extensions###
+### Installed extensions ###
+
     bz2 
     iconv 
     mcrypt 
